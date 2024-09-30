@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonofone - Créer, Interpréter, Apprécier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Changed to black */
+            overflow-x: hidden;
+        }
+        .header {
+            position: relative;
+            background-image: url('https://i.ibb.co/FXRKgwV/Screenshot-2024-09-29-at-10-01-46-AM.png');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .header h1 {
+            font-size: 4em;
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+        .header p {
+            font-size: 1.5em;
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #000000; /* Added for section background */
+        }
+        .section h2 {
+            font-size: 2.5em;
+            color: #ffffff; /* Changed to white for readability */
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1.3em;
+            color: #cccccc; /* Light gray for readability */
+            margin-bottom: 40px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .feature {
+            background-color: #1a1a1a; /* Dark gray for contrast */
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .feature img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .feature h3 {
+            font-size: 1.8em;
+            color: #4a90e2;
+            margin-top: 15px;
+        }
+        .feature p {
+            font-size: 1.1em;
+            color: #cccccc; /* Light gray for readability */
+        }
+        .testimonial-section {
+            padding: 60px 20px;
+            background-color: #000000; /* Added for testimonial background */
+        }
+        .testimonial-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #ffffff; /* Changed to white */
+        }
+        .testimonial {
+            background-color: #1a1a1a; /* Dark gray for contrast */
+            padding: 20px;
+            margin: 20px;
+            border-left: 5px solid #4a90e2;
+        }
+        .testimonial p {
+            font-size: 1.1em;
+            color: #cccccc; /* Light gray for readability */
+        }
+        .testimonial h3 {
+            font-size: 1.3em;
+            margin-top: 10px;
+            color: #4a90e2;
+        }
+        .footer {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="header">
+        <h1>Créer | Interpréter | Apprécier</h1>
+        <p>Explorez l'univers musical avec Fonofone</p>
+    </div>
+
+    <!-- Home Section -->
+    <div class="section">
+        <h2>Bienvenue sur Fonofone</h2>
+        <p>Explorez un monde de musique, danse, arts plastiques et bien plus. Grâce à Fonofone, découvrez comment créer, interpréter et apprécier l’art sous toutes ses formes.</p>
+        <div class="features">
+            <div class="feature">
+                <img src="https://i.ibb.co/wp9RQ2D/Screenshot-2024-09-29-at-5-07-37-PM.png" alt="Fono-WEB">
+                <h3>Musique - Fono-WEB</h3>
+                <p>Accédez à des outils pédagogiques innovants pour créer et interpréter de la musique en ligne.</p>
+            </div>
+            <div class="feature">
+                <img src="https://i.ibb.co/wp9RQ2D/Screenshot-2024-09-29-at-5-07-37-PM.png" alt="Tablette">
+                <h3>Musique - Tablette</h3>
+                <p>Utilisez nos applications interactives pour créer de la musique sur tablette, où que vous soyez.</p>
+            </div>
+            <div class="feature">
+                <img src="https://i.ibb.co/wp9RQ2D/Screenshot-2024-09-29-at-5-07-37-PM.png" alt="Danse">
+                <h3>Danse</h3>
+                <p>Intégrez le mouvement et la danse à votre expression artistique avec des outils uniques pour les enseignants et les élèves.</p>
+            </div>
+            <div class="feature">
+                <img src="https://i.ibb.co/wp9RQ2D/Screenshot-2024-09-29-at-5-07-37-PM.png" alt="Art Dramatique">
+                <h3>Art Dramatique</h3>
+                <p>Explorez les arts de la scène à travers des projets d’art dramatique engageants et accessibles.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Section -->
+    <div class="testimonial-section">
+        <h2>Témoignages et Expériences</h2>
+        <div class="testimonial">
+            <p>« C’est une expérience dont je vais me souvenir toute la vie. »</p>
+            <h3>— Rosemary, école secondaire Ladauversière</h3>
+        </div>
+        <div class="testimonial">
+            <p>« Je crois qu’avec fonofone nous avons un outil léger, ludique et sexy. Les quelques mois passés à l’expérimenter avec mes élèves m’en ont convaincue. »</p>
+            <h3>— Lorraine Samson, enseignante en musique, Centre Pédagogique Lucien-Guilbault</h3>
+        </div>
+        <div class="testimonial">
+            <p>« Fonofone, c’est une application vraiment cool pour inventer de la musique parce que si on apprend à écouter, on réalise qu’il y a de la musique dans tous les sons. »</p>
+            <h3>— Élève, école primaire Au-Coeur-des-Monts, St-Pie</h3>
+        </div>
+        <div class="testimonial">
+            <p>« Je veux vous remercier pour l'expérience incroyable que ma classe et moi avons vécue à travers les ateliers Fonofone. »</p>
+            <h3>— Audrey Bellerose-Battaglini, Enseignante de musique</h3>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Fonofone | <a href="mailto:info@fonofone.org">Écrivez-nous</a> | Suivez-nous sur <a href="#">Twitter</a>, <a href="#">Instagram</a>, <a href="#">Facebook</a>, <a href="#">YouTube</a></p>
+    </div>
+
+</body>
+</html>
