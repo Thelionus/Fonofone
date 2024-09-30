@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fonofone - Créer, Interpréter, Apprécier</title>
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000000; /* Changed to black */
+            background-color: #000000; /* Noir */
             overflow-x: hidden;
         }
         .header {
@@ -41,16 +44,16 @@
         .section {
             padding: 60px 20px;
             text-align: center;
-            background-color: #000000; /* Added for section background */
+            background-color: #000000; /* Noir */
         }
         .section h2 {
             font-size: 2.5em;
-            color: #ffffff; /* Changed to white for readability */
+            color: #ffffff; /* Blanc */
             margin-bottom: 20px;
         }
         .section p {
             font-size: 1.3em;
-            color: #cccccc; /* Light gray for readability */
+            color: #cccccc; /* Gris clair */
             margin-bottom: 40px;
         }
         .features {
@@ -59,7 +62,7 @@
             flex-wrap: wrap;
         }
         .feature {
-            background-color: #1a1a1a; /* Dark gray for contrast */
+            background-color: #1a1a1a; /* Gris foncé */
             padding: 20px;
             margin: 20px;
             width: 300px;
@@ -67,44 +70,55 @@
             border-radius: 8px;
             text-align: center;
         }
-        .feature img {
-            max-width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 8px;
+        .feature .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        /* Couleurs individuelles des icônes */
+        .icon-music {
+            color: #FFD700; /* Or */
+        }
+        .icon-tablet {
+            color: #ADFF2F; /* Vert jaune */
+        }
+        .icon-danse {
+            color: #FF69B4; /* Rose vif */
+        }
+        .icon-art {
+            color: #FF8C00; /* Orange foncé */
         }
         .feature h3 {
             font-size: 1.8em;
-            color: #4a90e2;
+            color: #ffffff; /* Blanc */
             margin-top: 15px;
         }
         .feature p {
             font-size: 1.1em;
-            color: #cccccc; /* Light gray for readability */
+            color: #cccccc; /* Gris clair */
         }
         .testimonial-section {
             padding: 60px 20px;
-            background-color: #000000; /* Added for testimonial background */
+            background-color: #000000; /* Noir */
         }
         .testimonial-section h2 {
             font-size: 2.5em;
             margin-bottom: 30px;
-            color: #ffffff; /* Changed to white */
+            color: #ffffff; /* Blanc */
         }
         .testimonial {
-            background-color: #1a1a1a; /* Dark gray for contrast */
+            background-color: #1a1a1a; /* Gris foncé */
             padding: 20px;
             margin: 20px;
-            border-left: 5px solid #4a90e2;
+            border-left: 5px solid #FFD700; /* Or */
         }
         .testimonial p {
             font-size: 1.1em;
-            color: #cccccc; /* Light gray for readability */
+            color: #cccccc; /* Gris clair */
         }
         .testimonial h3 {
             font-size: 1.3em;
             margin-top: 10px;
-            color: #4a90e2;
+            color: #FFD700; /* Or */
         }
         .footer {
             background-color: #333333;
@@ -113,7 +127,7 @@
             padding: 20px;
         }
         .footer a {
-            color: #4a90e2;
+            color: #FFD700; /* Or */
             text-decoration: none;
         }
         @media (max-width: 768px) {
@@ -141,23 +155,27 @@
         <h2>Bienvenue sur Fonofone</h2>
         <p>Explorez un monde de musique, danse, arts plastiques et bien plus. Grâce à Fonofone, découvrez comment créer, interpréter et apprécier l’art sous toutes ses formes.</p>
         <div class="features">
+            <!-- Feature 1: Musique - Fono-WEB -->
             <div class="feature">
-                <img src="https://i.ibb.co/wp9RQ2D/Screenshot-2024-09-29-at-5-07-37-PM.png" alt="Fono-WEB">
+                <div class="icon icon-music"><i class="fas fa-music"></i></div>
                 <h3>Musique - Fono-WEB</h3>
                 <p>Accédez à des outils pédagogiques innovants pour créer et interpréter de la musique en ligne.</p>
             </div>
+            <!-- Feature 2: Musique - Tablette -->
             <div class="feature">
-                <img src="https://i.ibb.co/wp9RQ2D/Screenshot-2024-09-29-at-5-07-37-PM.png" alt="Tablette">
+                <div class="icon icon-tablet"><i class="fas fa-tablet-alt"></i></div>
                 <h3>Musique - Tablette</h3>
                 <p>Utilisez nos applications interactives pour créer de la musique sur tablette, où que vous soyez.</p>
             </div>
+            <!-- Feature 3: Danse -->
             <div class="feature">
-                <img src="https://i.ibb.co/wp9RQ2D/Screenshot-2024-09-29-at-5-07-37-PM.png" alt="Danse">
+                <div class="icon icon-danse"><i class="fas fa-shoe-prints"></i></div>
                 <h3>Danse</h3>
                 <p>Intégrez le mouvement et la danse à votre expression artistique avec des outils uniques pour les enseignants et les élèves.</p>
             </div>
+            <!-- Feature 4: Art Dramatique -->
             <div class="feature">
-                <img src="https://i.ibb.co/wp9RQ2D/Screenshot-2024-09-29-at-5-07-37-PM.png" alt="Art Dramatique">
+                <div class="icon icon-art"><i class="fas fa-theater-masks"></i></div>
                 <h3>Art Dramatique</h3>
                 <p>Explorez les arts de la scène à travers des projets d’art dramatique engageants et accessibles.</p>
             </div>
